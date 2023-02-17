@@ -1,5 +1,6 @@
 package core;
 
+import util.RocketReadiness;
 import util.ThingInterface;
 
 public class Znaika implements ThingInterface {
@@ -18,6 +19,39 @@ public class Znaika implements ThingInterface {
     }
     public String met(){
         return "Там он познамолися с учеными малышками Фуксией и Селедочкой, которые в то время готовили свой второй полет на Луну";
+    }
+    public String gotIntoWork(){
+        return name + " тоже включился в работу по постройке космической ракеты и, ";
+    }
+    public String travele(Rocket rocket) throws RocketReadiness{
+        if(rocket.getReady()) {
+            return "совершил с Фуксией и Селедочкой межпланетное путешествие";
+        }else{throw new RocketReadiness();}
+    }
+
+    public String havingBeenOnTheMoon(){
+        return "Пробыв на Луне около четырех часов, ";
+    }
+    public String beForced(){
+        return name + " и его спутницы принуждены были поскорей отправиться в обратный путь,";
+    }
+    public String comeBackHome(){
+        return "Вернувшись в Цветочный город";
+    }
+    public String tellALot(){
+        return  name + " много рассказывал о своем путешествии";
+    }
+    public String didNotAgree(){
+        return name + ", однако ж, не был согласен ни с вулканической, ни с метеоритной теорией";
+    }
+    public String createTheory(){
+        return "Еще до путешествия на Луну он содал свою собственную теорию происхождения лунных кратеров";
+    }
+    public String observe(){
+        return "Однажды он вместе со Стекляшкиным наблюдал Луну в телескоп, и ему бросилось в глаза, ";
+    }
+    public String lookOn(){
+        return "После этого " + name + " часто ходил на кухню и наблюдал, как ";
     }
     @Override
     public String getName() {return name;}

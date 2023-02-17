@@ -12,7 +12,18 @@ public class Nobody implements ThingInterface {
     public Nobody(String name){
         this.name = name;
     }
-
+    public String doNotSuffocate(){
+        return "чтоб не задохнуться,";
+    }
+    public String takeWithYou(AirReserves air){
+        return "всегда нужно брать с собой " + air.getName();
+    }
+    public String imagine(){
+        return "Чтобы понять, как выглядит такой лунный цирк, или кратер,\n вообразите себе огромное круголлое поле,\n в поперечнике километров двадцать, тридцать, пятьдесят или даже сто,\n и представьте, что это огромное круглое поле окружено земляным валом\n или горой высотой всего в два или три километра,\n -- вот и получится лунный цирк, или кратер";
+    }
+    public String call(){
+        return "Первую половину астрономов называют поэтому последователями вулканической теории или попросту вулканистами, а вторую -- последователями метеоритной теории или метеоритчиками";
+    }
     @Override
     public String getName() {return name;}
 

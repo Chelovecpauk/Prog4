@@ -4,14 +4,17 @@ import util.*;
 
 public class Ponchik implements ThoughtsInterface, ThrowAwaySuitsInterface, ThingInterface {
     private String name;
+    private boolean addictive;
     private final RiverEnum RIVER = RiverEnum.OGURCOVAIYA;
 
     public Ponchik(){
         name = "Пончик";
+        addictive = false;
     }
 
     public Ponchik(String name){
         this.name = name;
+        addictive = false;
     }
 
     public String natascat(){
@@ -30,10 +33,14 @@ public class Ponchik implements ThoughtsInterface, ThrowAwaySuitsInterface, Thin
         return name + " и сам пропах, насквозь этим одуряющим запахом,";
     }
     public String getUsedTo(){
+        addictive = true;
         return "но настолько привык к нему,";
     }
-    public String stopNoticing(){
-        return "что даже перестал замечать";
+    public String stopNoticing() throws AddictiveException{
+        if (addictive) {
+            return "что даже перестал замечать";
+        }
+        else{throw new AddictiveException();}
     }
 
     public String comeToVisit(){

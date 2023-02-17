@@ -1,12 +1,30 @@
 package run;
 
 import core.*;
+import util.LinkingWordEnum;
+import util.PronounEnum;
 
 public class Story {
     public static void main(String[] args) {
+        FlowersCityResidents flowersCityResidents = new FlowersCityResidents();
+        System.out.println(flowersCityResidents.buildRocket());
+        System.out.println(flowersCityResidents.goOnSpaceTrip());
+        Adventure adventure = new Adventure();
+        System.out.println(adventure.happen(LinkingWordEnum.WHERE, PronounEnum.THEM));
+        Children children = new Children();
+        System.out.println(children.makeSentence(LinkingWordEnum.FOR));
+        Neznaika neznaika = new Neznaika();
+        System.out.println(neznaika.commit(adventure));
+        Time time = new Time();
+        System.out.println(time.pass());
+
+// stopNoticing - исключение обработать
+// trevele - исключение обработать
+
+
         SunnyCityResidents sunnyCityResidents = new SunnyCityResidents();
         System.out.println( sunnyCityResidents.toKnow() );
-        FlowersCityResidents flowersCityResidents = new FlowersCityResidents();
+
         System.out.println(flowersCityResidents.build());
         System.out.println(sunnyCityResidents.help());
         System.out.println(sunnyCityResidents.build());
@@ -35,7 +53,8 @@ public class Story {
         Room room = new Room();
         System.out.println(room.turnInto(new Depot()));
         System.out.println(newSuits.location(new Closed(),new Table(),new BookShelf(),new Wall(),new ChairBacks(),new Ceiling(),new Ropes()));
-        System.out.println(ponchik.effect.faint());
+
+
 
     }
 }

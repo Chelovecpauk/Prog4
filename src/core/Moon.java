@@ -12,7 +12,15 @@ public class Moon implements ThingInterface {
     public Moon(String name){
         this.name = name;
     }
-
+    public String describeSurface(){
+        return "поверхность Луны не ровная, а гористая, ";
+    }
+    public String describeMountains(){
+        return "причем многие горы на Луне не такие, как у нас на Земле, а почему-то круглые, вернее сказать -- кольцеобразные";
+    }
+    public  String compareSurface(){
+        return " что лунная поверхность очень похожа на поверхность хорошо пропеченного блина с его ноздреватыми дырками";
+    }
     @Override
     public String getName() {return name;}
 

@@ -1,7 +1,7 @@
 package util;
 
 public enum LinkingWordEnum {
-    WHERE("где"), FOR("для"), SINCETHEN("С тех пор как"),ALTHOUGH("хотя"), BUT("но"), WHEN("когда"), ITCOULDBE("можно было"), STRAIGHT("прямо");
+    WHERE("где"), FOR("для"), SINCETHEN("С тех пор как"),ALTHOUGH("хотя"), BUT("но"), WHEN("когда"), ITCOULDBE("можно было"), STRAIGHT("прямо"),AS("по мере того как");
     private String translation;
 
     public String getTranslation(){
