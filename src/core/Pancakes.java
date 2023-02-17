@@ -52,6 +52,7 @@ public class Pancakes implements ThingInterface {
     public static class Surface{
         private String name = "поверхность";
         private static String condition = "совершенно гладкая";
+        public Surface(){}
         public Surface(String name){
             this.name = name;
         }
@@ -88,7 +89,7 @@ public class Pancakes implements ThingInterface {
             return "Проступив на поверхность блина";
         }
         public String burst(){
-            return name + " лопаются";
+            return name + " лопаются,";
         }
     }
 }

@@ -13,6 +13,10 @@ public class Automobile implements ThingInterface {
         this.name = name;
     }
 
+    public String appear(){
+        return "На улицах появилось множество " +  name + ", ";
+    }
+
     @Override
     public String getName() {return name;}
 

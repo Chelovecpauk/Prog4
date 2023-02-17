@@ -42,6 +42,10 @@ public class Owner implements ThingInterface {
     public class Head implements  ThingInterface{
         private String name;
 
+        public Head(String name){
+            this.name = name;
+        }
+
         public String dizzy(){
             return "у " + Owner.this.name + " сейчас же начинала кружиться от одурения " + name;
         }

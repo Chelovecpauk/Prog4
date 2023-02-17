@@ -15,7 +15,7 @@ public class Dough implements ThingInterface {
     }
 
     public  String bake(LinkingWordEnum link){
-        return link.getTranslation() + " " + name + "как следует пропечется";
+        return link.getTranslation() + " " + name + " как следует пропечется";
     }
     public  String loseViscosity(){
         return "и потеряет вязкость";

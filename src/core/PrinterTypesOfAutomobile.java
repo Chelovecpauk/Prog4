@@ -15,12 +15,13 @@ public class PrinterTypesOfAutomobile {
                 }
 
                 public void print() {
-                    System.out.print(text);
+                    System.out.print(text + " ");
                 }
             }
 
             Printer printer = new Printer(type.getTranslation());
             printer.print();
         }
+        System.out.println("и других разных машин");
     }
 }

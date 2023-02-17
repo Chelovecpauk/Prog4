@@ -4,7 +4,7 @@ public class Water implements ThingInterface{
     private String name;
 
     public Water(){
-        name = "вода";
+        name = "воду";
     }
 
     public Water(String name){

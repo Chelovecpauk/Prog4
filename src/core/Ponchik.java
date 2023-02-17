@@ -46,7 +46,7 @@ public class Ponchik implements ThoughtsInterface, ThrowAwaySuitsInterface, Thin
     public String comeToVisit(){
         return "Как только " + name + " приходил к кому-нибудь в гости,";
     }
-    public String notBeAble(){
+    public String beUnableTo(){
         return "По этой же причине " + name + " не имел даже возможности поиграть с коротышками во дворе";
     }
     public String feelOffended(){

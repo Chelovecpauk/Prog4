@@ -12,7 +12,7 @@ public class Crater implements ThingInterface {
     public Crater(){
         name = "кратеров";
         characteristic = "космическая ";
-        quantity = "";
+        quantity = "тысячи";
     }
     public Crater(String name){
         this.name = name;
@@ -36,7 +36,7 @@ public class Crater implements ThingInterface {
         return "Таких " + name + " на Луне " + quantity;
     }
     public String bringOutVariety(){
-        return "Есть маленькие -- мкилометра в два, но есть и  гигантские -- до ста сорока километров в диаметре";
+        return "Есть маленькие -- километра в два, но есть и  гигантские -- до ста сорока километров в диаметре";
     }
     @Override
     public String getName() {return name;}

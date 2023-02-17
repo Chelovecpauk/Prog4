@@ -14,10 +14,10 @@ public class Gravity implements ThingInterface {
     }
 
     public String compareGravities(){
-        return "На Луне, как известно, " + name + " сила тяжести значительно меньше, чем на Земле,";
+        return "На Луне, как известно, " + name + " значительно меньше, чем на Земле,";
     }
     public String countForMuch(){
-        return "и поэтому наблюдения над изменением " + name + " имеют боольшое научное значение";
+        return "и поэтому наблюдения над изменением " + name + " имеют большое научное значение";
     }
     @Override
     public String getName() {return name;}

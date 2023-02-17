@@ -25,7 +25,7 @@ public class Travelers implements ThingInterface {
         return "Прилетев на Луну,";
     }
     public String survey(){
-        return "наши " + characteristic + " " + name  + "обследовали один небольших лунных кратеров в районе лунного Моря Ясности,";
+        return "наши " + characteristic + " " + name  + " обследовали один из небольших лунных кратеров в районе лунного Моря Ясности,";
     }
     public String visitCave(){
         return "побывали в пещере, ";

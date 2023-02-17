@@ -56,11 +56,11 @@ public class FirstBuilding extends RevolvingBuildingAbstract {
     public class Descent{
         private String name;
         private String typeOfDescent;
-        Descent(){
+        public Descent(){
             typeOfDescent = "спиральным";
             name = "спуском";
         }
-        Descent(String name, String typeOfDescent){
+        public Descent(String name, String typeOfDescent){
             this.name = name;
             this.typeOfDescent = typeOfDescent;
         }
@@ -78,13 +78,13 @@ public class FirstBuilding extends RevolvingBuildingAbstract {
         private String typeOfPool;
         private String location;
 
-        Pool() {
+        public Pool() {
             typeOfPool = "плавательным";
             name = "бассейном";
             location = "вокруг";
         }
 
-        Pool(String name, String typeOfPool, String location) {
+        public Pool(String name, String typeOfPool, String location) {
             this.name = name;
             this.typeOfPool = typeOfPool;
             this.location = location;

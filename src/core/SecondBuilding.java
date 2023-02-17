@@ -105,13 +105,13 @@ public class SecondBuilding extends RevolvingBuildingAbstract {
         private String typeOfWheel;
         private String location;
 
-        Wheel() {
+        public Wheel() {
             typeOfWheel = "чертовым";
             name = "колесом";
             location = "на крыше";
         }
 
-        Wheel(String name, String typeOfPool, String location) {
+        public Wheel(String name, String typeOfPool, String location) {
             this.name = name;
             this.typeOfWheel = typeOfPool;
             this.location = location;

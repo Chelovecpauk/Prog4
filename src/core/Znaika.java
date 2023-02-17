@@ -1,6 +1,6 @@
 package core;
 
-import util.RocketReadiness;
+import util.RocketReadinessException;
 import util.ThingInterface;
 
 public class Znaika implements ThingInterface {
@@ -23,10 +23,10 @@ public class Znaika implements ThingInterface {
     public String gotIntoWork(){
         return name + " тоже включился в работу по постройке космической ракеты и, ";
     }
-    public String travele(Rocket rocket) throws RocketReadiness{
+    public String travele(Rocket rocket) throws RocketReadinessException {
         if(rocket.getReady()) {
             return "совершил с Фуксией и Селедочкой межпланетное путешествие";
-        }else{throw new RocketReadiness();}
+        }else{throw new RocketReadinessException("Ракета не готова, дуранчоус");}
     }
 
     public String havingBeenOnTheMoon(){

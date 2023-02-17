@@ -14,7 +14,7 @@ public class Scientists implements ThingInterface {
     }
 
     public String callMountains(Mountains mountains){
-        return  "Эти" + mountains.getCharacteristic() + " " + mountains.getName() + "ученые называют лунными кратерами, или цирками";
+        return  "Эти " + mountains.getCharacteristic() + " " + mountains.getName() + " ученые называют лунными кратерами, или цирками";
     }
     public String beInterersted(){
         return "Многих ученых интересует вопрос, как образовались лунные кратеры, от чего они произошли";
