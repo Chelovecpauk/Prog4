@@ -86,7 +86,7 @@ public class Pancakes implements ThingInterface {
             return "на его " + surface.getName() + " начинают появляться " + Bubbles.this.getName() + " нагретого пара";
         }
         public String breakSurface(){
-            return "Проступив на поверхность блина";
+            return "Проступив на поверхность блина,";
         }
         public String burst(){
             return name + " лопаются,";

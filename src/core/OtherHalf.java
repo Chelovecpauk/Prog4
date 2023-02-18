@@ -13,7 +13,7 @@ public class OtherHalf extends HalfAbstract {
 
     @Override
     public String approve(){
-        return getName() + " говорит, что лунные кратеры -- это следы от падения крупных метеоритов";
+        return getName() + "говорит, что лунные кратеры -- это следы от падения крупных метеоритов";
     }
 
     @Override

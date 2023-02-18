@@ -24,7 +24,8 @@ public class Story {
         Knopochka knopochka = new Knopochka();
         Pachkulia pachkulia = new Pachkulia();
         Town town = new Town();
-        System.out.println(flowersCityResidents.hearEnough(neznaika,knopochka,pachkulia,town));
+        System.out.println(flowersCityResidents.hearEnough(new Neznaika("Незнайки"),knopochka,pachkulia,town));
+        System.out.println(flowersCityResidents.makeTrip(town));
         System.out.println(flowersCityResidents.returnBack(LinkingWordEnum.WHEN));
         System.out.println(flowersCityResidents.decide(PronounEnum.MYSELF,PronounEnum.SOME));
         Town cvetochniy = new Town("Цветочный");
@@ -110,6 +111,7 @@ public class Story {
         System.out.println(head.dizzy());
         System.out.println(ponchik.effectDriveAway());
         System.out.println(ponchik.effectOpen());
+        System.out.println(ponchik.effectVentilate());
         System.out.println(ponchik.effectFaint());
         System.out.println(ponchik.effectGoCrazy());
         System.out.println(ponchik.beUnableTo());
@@ -142,7 +144,7 @@ public class Story {
         System.out.println(gravity.countForMuch());
         System.out.println(znaika.havingBeenOnTheMoon());
         System.out.println(znaika.beForced());
-        AirReserves airReserves = new AirReserves("запасов воздуха");
+        AirReserves airReserves = new AirReserves("запас воздуха","в сгущенном виде");
         System.out.println(airReserves.beRunningOut());
         System.out.println(airReserves.otToExist());
         System.out.println(nobody.doNotSuffocate());

@@ -91,7 +91,7 @@ public class FirstBuilding extends RevolvingBuildingAbstract {
         }
 
         public String declarePool() {
-            return " и " + typeOfPool + " " + name + " " + location;
+            return "и " + typeOfPool + " " + name + " " + location;
         }
         public String dive(LinkingWordEnum link1, LinkingWordEnum link2, Water water){
             return link1.getTranslation() + " нырять " + link2.getTranslation() + " в " + water.getName() + "),";

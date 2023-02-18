@@ -141,7 +141,7 @@ public class Ponchik implements ThoughtsInterface, ThrowAwaySuitsInterface, Thin
 
         @Override
         public String open() {
-            return " поскорей открывали настежь все окна и двери, ";
+            return "поскорей открывали настежь все окна и двери, ";
         }
 
         @Override

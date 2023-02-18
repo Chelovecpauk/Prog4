@@ -27,7 +27,7 @@ public class FlowersCityResidents extends CityResidentsAbstract {
     }
 
     public String hearEnough(Neznaika neznaika, Knopochka knopochka, Pachkulia pachkulia, Town town){
-        return "Наслушавшись рассказов" + neznaika.getName() + ", " + knopochka.getName() + " и " + pachkulia.getName() + ", ";
+        return "Наслушавшись рассказов " + neznaika.getName() + ", " + knopochka.getName() + " и " + pachkulia.getName() + ", ";
     }
     public String makeTrip(Town town){
         return getName() + " тоже совершили поездку в " + town.getName() + " город, ";

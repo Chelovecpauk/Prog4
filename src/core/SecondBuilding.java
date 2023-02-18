@@ -7,11 +7,11 @@ public class SecondBuilding extends RevolvingBuildingAbstract {
     private String height;
 
     public SecondBuilding(){
-        super("Одно");
-        height = "пятиэтажное";
+        super("другое");
+        height = "шестиэтажное";
     }
 
-    public SecondBuilding(String name, String height, String type){
+    public SecondBuilding(String name, String height){
         super(name);
         this.height = height;
     }
